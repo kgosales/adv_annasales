@@ -104,11 +104,6 @@ main div.textos {
     justify-content: center;
 }
 
-main div.fotos {
-    width: 50%;
-    height: 100%;
-}
-
 /*Chamada*/
 
 main div.chamada {
@@ -145,6 +140,52 @@ main div.chamada div.sociais a {
 
 main div.chamada div.sociais a:hover {
     color: #F47821;
+}
+
+/*Fotos*/
+
+main div.fotos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main .circulo{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+
+#circulo{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #F47821;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+main div.fotos div.foto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main div.fotos div.foto div#foto{
+    width: 100%;
+    height: 90%;
+    background-image: url(../imgs/anna_sales.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 720px) {
@@ -186,15 +227,23 @@ main div.chamada div.sociais a:hover {
         height: auto;
     }
 
-    main div.fotos {
-        width: 100%;
-        height: auto;
-    }
-
     /*Chamada*/
 
     main div.chamada {
         width: 80%;
         height: 100%;
+    }
+
+    /*Fotos*/
+
+    main div.fotos {
+        width: 100%;
+        height: 100%;
+    }
+
+    #circulo{
+        width: 300px;
+        height: 300px;
+        left: 80px;
     }
 }
