@@ -128,6 +128,7 @@ main div.chamada h1 {
 
 main div.chamada p {
     color: rgb(120, 120, 120);
+    margin: 20px 0;
 }
 
 main div.chamada div.sociais {
@@ -138,11 +139,62 @@ main div.chamada div.sociais {
     justify-content: space-around;
 }
 
-main div.chamada div.sociais a{
+main div.chamada div.sociais a {
     color: #90469B;
 }
 
-
 main div.chamada div.sociais a:hover {
     color: #F47821;
+}
+
+@media screen and (max-width: 720px) {
+
+    /*Header*/
+
+    header {
+        height: 15%;
+    }
+
+    header div.container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /*Logo*/
+
+    header div.logo {
+        width: 80%;
+        height: 70%;
+        margin: auto 0;
+    }
+
+    /*Navegação*/
+
+    header div.container nav.menu-desktop {
+        margin-top: 10px;
+    }
+
+    /*Main*/
+
+    main div.container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main div.textos {
+        width: 100%;
+        height: auto;
+    }
+
+    main div.fotos {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Chamada*/
+
+    main div.chamada {
+        width: 80%;
+        height: 100%;
+    }
 }
