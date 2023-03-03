@@ -133,11 +133,15 @@ main div.chamada p {
 main div.chamada div.sociais {
     width: 80%;
     font-size: 30px;
-    color: #90469B;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+main div.chamada div.sociais a{
+    color: #90469B;
+}
+
 
 main div.chamada div.sociais a:hover {
     color: #F47821;
