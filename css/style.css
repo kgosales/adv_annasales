@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "Photograph";
+    src: url(../fonts/Photograph_Signature.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/*Auxiliares*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+header div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo*/
+
+header div.logo {
+    width: 20%;
+    height: 100%;
+}
+
+header div.logo div#logo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/logo-lilas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Navegação*/
+
+header div.container nav.menu-desktop {
+    width: 15%;
+    min-width: 200px;
+}
+
+header div.container nav.menu-desktop ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.container nav.menu-desktop ul li a {
+    text-decoration: none;
+    color: #90469B;
+}
+
+header div.container nav.menu-desktop ul li a:hover {
+    color: #F47821;
+}
+
+/*Main*/
+
+main {
+    width: 100%;
+    height: 90%;
+}
+
+main div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.textos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Chamada*/
+
+main div.chamada {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main div.chamada h1 {
+    font-family: "Photograph";
+    color: #90469B;
+    font-size: 58px;
+}
+
+main div.chamada p {
+    color: rgb(120, 120, 120);
+    margin: 20px 0;
+}
+
+main div.chamada div.sociais {
+    width: 80%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main div.chamada div.sociais a {
+    color: #90469B;
+}
+
+main div.chamada div.sociais a:hover {
+    color: #F47821;
+}
+
+/*Fotos*/
+
+main div.fotos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main .circulo{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+
+#circulo{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #F47821;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+main div.fotos div.foto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main div.fotos div.foto div#foto{
+    width: 100%;
+    height: 90%;
+    background-image: url(../imgs/anna_sales.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+
+    /*Header*/
+
+    header {
+        height: 15%;
+    }
+
+    header div.container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /*Logo*/
+
+    header div.logo {
+        width: 80%;
+        height: 70%;
+        margin: auto 0;
+    }
+
+    /*Navegação*/
+
+    header div.container nav.menu-desktop {
+        margin-top: 10px;
+    }
+
+    /*Main*/
+
+    main div.container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main div.textos {
+        width: 100%;
+        height: auto;
+    }
+
+    /*Chamada*/
+
+    main div.chamada {
+        width: 80%;
+        height: 100%;
+    }
+
+    /*Fotos*/
+
+    main div.fotos {
+        width: 100%;
+        height: 100%;
+    }
+
+    #circulo{
+        width: 300px;
+        height: 300px;
+        left: 80px;
+    }
+}
