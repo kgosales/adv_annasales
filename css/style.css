@@ -1,23 +1,144 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html, body{
+@font-face {
+    font-family: "Photograph";
+    src: url(../fonts/Photograph_Signature.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/*Auxiliares*/
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-h1 {
-    color: rebeccapurple;
+.container {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
 }
 
-div.chamada{
+/*Header*/
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+header div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Logo*/
+
+header div.logo {
+    width: 20%;
+    height: 100%;
+}
+
+header div.logo div#logo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/logo-lilas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Navegação*/
+
+header div.container nav.menu-desktop {
+    width: 15%;
+    min-width: 200px;
+}
+
+header div.container nav.menu-desktop ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.container nav.menu-desktop ul li a {
+    text-decoration: none;
+    color: #90469B;
+}
+
+header div.container nav.menu-desktop ul li a:hover {
+    color: #F47821;
+}
+
+/*Main*/
+
+main {
+    width: 100%;
+    height: 90%;
+}
+
+main div.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.textos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.fotos {
+    width: 50%;
+    height: 100%;
+}
+
+/*Chamada*/
+
+main div.chamada {
+    width: 70%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-div.chamada div.sociais{
+main div.chamada h1 {
+    font-family: "Photograph";
+    color: #90469B;
+    font-size: 58px;
+}
+
+main div.chamada p {
+    color: rgb(120, 120, 120);
+}
+
+main div.chamada div.sociais {
+    width: 80%;
+    font-size: 30px;
+    color: #90469B;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+main div.chamada div.sociais a:hover {
+    color: #F47821;
 }
