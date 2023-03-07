@@ -31,6 +31,7 @@ body {
 header {
     width: 100%;
     height: 10%;
+    border-bottom: #F47821 3px solid;
 }
 
 header div.container {
@@ -74,6 +75,8 @@ header div.container nav.menu-desktop ul {
 
 header div.container nav.menu-desktop ul li a {
     text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
     color: #90469B;
 }
 
@@ -149,23 +152,23 @@ main div.fotos {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    position: relative;
 }
 
 main .circulo{
     width: 100%;
-    height: 50%;
-    background-color: red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #circulo{
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: 450px;
     border-radius: 100%;
     background-color: #F47821;
-    position: absolute;
-    top: 100px;
-    z-index: -1;
 }
 
 main div.fotos div.foto{
@@ -174,6 +177,8 @@ main div.fotos div.foto{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: absolute;
+    z-index: 1;
 }
 
 main div.fotos div.foto div#foto{
@@ -185,7 +190,30 @@ main div.fotos div.foto div#foto{
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+}
+
+@media screen and (max-width: 840px) {
+
+    /*Header*/
+
+    /*Logo*/
+
+    /*Navegação*/
+
+    /*Main*/
+
+    /*Chamada*/
+
+    /*Fotos*/
+
+    main div.fotos div.foto div#foto{
+        background-size: cover;
+    }
+
+    #circulo{
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -212,7 +240,7 @@ main div.fotos div.foto div#foto{
     /*Navegação*/
 
     header div.container nav.menu-desktop {
-        margin-top: 10px;
+        margin: 10px 0;
     }
 
     /*Main*/
@@ -244,6 +272,9 @@ main div.fotos div.foto div#foto{
     #circulo{
         width: 300px;
         height: 300px;
-        left: 80px;
+    }
+
+    main div.fotos div.foto div#foto{
+        background-size: contain;
     }
 }
